@@ -1,0 +1,55 @@
+#include <ESP32Servo.h>
+
+Servo s1, s2, s3;
+const int eegPin = 34;
+
+int currentAngle = 0;
+int targetAngle = 0;
+int lastMappedAngle = 0;
+
+unsigned long lastMoveTime = 0;
+unsigned long signalStartTime = 0;
+
+int motorSpeed = 15;        // speed
+int reactionDelay = 500;    // delay I am keeping it
+
+void setup() {
+  Serial.begin(115200);
+  ESP32PWM::allocateTimer(0);
+  s1.attach(18, 500, 2400);
+  s2.attach(19, 500, 2400);
+  s3.attach(21, 500, 2400);
+}
+
+void loop() {
+  //  Read EEG
+  int rawValue = analogRead(eegPin);
+  int newMappedAngle = map(rawValue, 1500, 3000, 0, 180);
+  newMappedAngle = constrain(newMappedAngle, 0, 180);
+
+  // Verify the signal
+  if (newMappedAngle != lastMappedAngle) {
+    signalStartTime = millis();  // Restart the timer
+    lastMappedAngle = newMappedAngle;
+  }
+
+  // for mocing after delay confirmed correct
+  if (millis() - signalStartTime > reactionDelay) {
+    targetAngle = newMappedAngle;
+  }
+
+  // For movement smooth
+  if (millis() - lastMoveTime > motorSpeed) {
+    if (currentAngle < targetAngle) {
+      currentAngle++;
+    } else if (currentAngle > targetAngle) {
+      currentAngle--;
+    }
+    
+    s1.write(currentAngle);
+    s2.write(currentAngle);
+    s3.write(currentAngle);
+    
+    lastMoveTime = millis();
+  }
+}
