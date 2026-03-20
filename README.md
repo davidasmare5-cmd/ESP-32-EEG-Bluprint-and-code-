@@ -1,4 +1,2 @@
-This is untested and this is my first serious project
-I have only done simple projects with instructions with them but this is the first one I have done that I wrote the code myself.
-I have done a lot of things myself for the first time so I am not sure I did this right
-The despcrition it in the comments in the pictures
+This is a EEG controlled arm that I made to help with disabled people use technology
+You put these EEG cups on your left and right side of your forehead and think really hard then the arm will move
