@@ -1,5 +1,7 @@
 This is a EEG controlled arm that I made to help with disabled people use technology
 You put these EEG cups on your left and right side of your forehead and think really hard then the arm will move
+
+
 5 Ad8326 $3.44
 2 10k Resistor $0.7
 40 GPIO pins $1.85
