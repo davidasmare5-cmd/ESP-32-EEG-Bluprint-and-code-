@@ -1,44 +1,35 @@
+//AI helped me make the code
 #include <ESP32Servo.h>
 
-Servo s1, s2, s3;
-const int eegPin = 34;
+Servo servoOne, servoTwo, servoThree;
+const int EegOfDoom = 34;
 
+const int MIDPOINT = 2048;
+const int SENSITIVITY = 400;
+float filterWeight = 0.05;
+
+float smoothedValue = MIDPOINT;
 int currentAngle = 0;
-int targetAngle = 0;
-int lastMappedAngle = 0;
-
 unsigned long lastMoveTime = 0;
-unsigned long signalStartTime = 0;
-
-int motorSpeed = 15;        // speed
-int reactionDelay = 500;    // delay I am keeping it
+const int motorSpeed = 15;
 
 void setup() {
   Serial.begin(115200);
   ESP32PWM::allocateTimer(0);
-  s1.attach(18, 500, 2400);
-  s2.attach(19, 500, 2400);
-  s3.attach(21, 500, 2400);
+  servoOne.attach(18, 500, 2400);
+  servoTwo.attach(19, 500, 2400);
+  servoThree.attach(21, 500, 2400);
 }
 
 void loop() {
-  //  Read EEG
-  int rawValue = analogRead(eegPin);
-  int newMappedAngle = map(rawValue, 1500, 3000, 0, 180);
-  newMappedAngle = constrain(newMappedAngle, 0, 180);
+  int rawValue = analogRead(EegOfDoom);
+  smoothedValue = (rawValue * filterWeight) + (smoothedValue * (1.0 - filterWeight));
 
-  // Verify the signal
-  if (newMappedAngle != lastMappedAngle) {
-    signalStartTime = millis();  // Restart the timer
-    lastMappedAngle = newMappedAngle;
-  }
+  int intensity = abs((int)smoothedValue - MIDPOINT);
 
-  // for mocing after delay confirmed correct
-  if (millis() - signalStartTime > reactionDelay) {
-    targetAngle = newMappedAngle;
-  }
+  int targetAngle = map(intensity, 0, SENSITIVITY, 0, 180);
+  targetAngle = constrain(targetAngle, 0, 180);
 
-  // For movement smooth
   if (millis() - lastMoveTime > motorSpeed) {
     if (currentAngle < targetAngle) {
       currentAngle++;
@@ -46,10 +37,17 @@ void loop() {
       currentAngle--;
     }
     
-    s1.write(currentAngle);
-    s2.write(currentAngle);
-    s3.write(currentAngle);
+    servoOne.write(currentAngle);
+    servoTwo.write(currentAngle);
+    servoThree.write(currentAngle);
     
     lastMoveTime = millis();
   }
+
+  Serial.print(rawValue);
+  Serial.print(",");
+  Serial.print(smoothedValue);
+  Serial.print(",");
+  Serial.println(targetAngle);
+  delay(5);
 }
