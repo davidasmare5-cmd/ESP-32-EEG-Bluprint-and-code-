@@ -2,12 +2,11 @@
 #include <ESP32Servo.h>
 
 Servo servoOne, servoTwo, servoThree;
-const int EegOfDoom = 34;
+const int EEG = 34;
 
 const int MIDPOINT = 2048;
 const int SENSITIVITY = 400;
 float filterWeight = 0.05;
-
 float smoothedValue = MIDPOINT;
 int currentAngle = 0;
 unsigned long lastMoveTime = 0;
@@ -22,13 +21,11 @@ void setup() {
 }
 
 void loop() {
-  int rawValue = analogRead(EegOfDoom);
+  int rawValue = analogRead(EEG);
   smoothedValue = (rawValue * filterWeight) + (smoothedValue * (1.0 - filterWeight));
-
-  int intensity = abs((int)smoothedValue - MIDPOINT);
-
-  int targetAngle = map(intensity, 0, SENSITIVITY, 0, 180);
-  targetAngle = constrain(targetAngle, 0, 180);
+   int intensity = abs((int)smoothedValue - MIDPOINT);
+    int targetAngle = map(intensity, 0, SENSITIVITY, 0, 180);
+     targetAngle = constrain(targetAngle, 0, 180);
 
   if (millis() - lastMoveTime > motorSpeed) {
     if (currentAngle < targetAngle) {
@@ -40,7 +37,6 @@ void loop() {
     servoOne.write(currentAngle);
     servoTwo.write(currentAngle);
     servoThree.write(currentAngle);
-    
     lastMoveTime = millis();
   }
 
