@@ -1,4 +1,4 @@
-//AI helped me make the code
+//AI HELPED me make the code I did most of the code it just helped me with corrections and that pretty much it
 #include <ESP32Servo.h>
 
 Servo servoOne, servoTwo, servoThree;
