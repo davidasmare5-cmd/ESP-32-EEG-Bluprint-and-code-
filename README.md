@@ -22,7 +22,8 @@ You put these EEG cups on your left and right side of your forehead and think re
 
 4 AAA batteries $11.88 https://www.amazon.com/Coppertop-Batteries-Ingredients-Long-lasting-Household/dp/B002UXRXE6/ref=sxin_17_pa_sp_search_thematic_sspa?content-id=amzn1.sym.141f5c48-2844-433f-b731-f8ecc97a5095%3Aamzn1.sym.141f5c48-2844-433f-b731-f8ecc97a5095&crid=12B50YO5RGBV2&cv_ct_cx=aaa%2Bbatteries&keywords=aaa%2Bbatteries&pd_rd_i=B002UXRXE6&pd_rd_r=e9366315-4b8d-4f1d-a802-dc2130b3c234&pd_rd_w=YoXfA&pd_rd_wg=ZEOJe&pf_rd_p=141f5c48-2844-433f-b731-f8ecc97a5095&pf_rd_r=4DZBVDK6EKDS4HBWV8GK&qid=1773983712&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=AAa%2Caps%2C185&sr=1-2-6024b2a3-78e4-4fed-8fed-e1613be3bcce-spons&aref=7qHHt5Xpnq&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1
 
-Esp 32 $20.00     https://www.amazon.com/ELEGOO-ESP-WROOM-32-Development-Bluetooth-Microcontroller/dp/B0D8T53CQ5/ref=sr_1_4?dib=eyJ2IjoiMSJ9.XBINg-sjhfF_gUtnMiKGjhlE-f5AuPRamTr33nRxSXntyKfd63to9CLmG4oT0XzvefW7_-rkGLljT9zR0TVvUHDRI1-4-yyG7q4mVwGZw31y1pJfL7dMpDerC6cAtc1-Tt0l_KIMhDk0JYmctMnpaxnwA2a-b2-K0pUovI9IQGF8Xc_qM52rKNzfTDChAAKbdtlzSkJ86XNHIAPF3mfyPp7Vyvs8qTgms_41ZuKcpds.7c-3XjXXt43TL9RYoD3Cmr00XcqVVDjLWd9Lxeq53vg&dib_tag=se&keywords=esp+32&qid=1773984297&sr=8-4
+Esp 32 $25.00     https://www.amazon.com/ELEGOO-ESP-WROOM-32-Development-Bluetooth-Microcontroller/dp/B0D8T53CQ5/ref=sr_1_4?dib=eyJ2IjoiMSJ9.XBINg-sjhfF_gUtnMiKGjhlE-f5AuPRamTr33nRxSXntyKfd63to9CLmG4oT0XzvefW7_-rkGLljT9zR0TVvUHDRI1-4-yyG7q4mVwGZw31y1pJfL7dMpDerC6cAtc1-Tt0l_KIMhDk0JYmctMnpaxnwA2a-b2-K0pUovI9IQGF8Xc_qM52rKNzfTDChAAKbdtlzSkJ86XNHIAPF3mfyPp7Vyvs8qTgms_41ZuKcpds.7c-3XjXXt43TL9RYoD3Cmr00XcqVVDjLWd9Lxeq53vg&dib_tag=se&keywords=esp+32&qid=1773984297&sr=8-4
 
 
-Total $143.21
+Total $148.21
+I bought everything together exept for the esp32 so I got free shipping
