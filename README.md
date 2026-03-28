@@ -24,6 +24,7 @@ You put these EEG cups on your left and right side of your forehead and think re
 
 Esp 32 $25.00     https://www.amazon.com/ELEGOO-ESP-WROOM-32-Development-Bluetooth-Microcontroller/dp/B0D8T53CQ5/ref=sr_1_4?dib=eyJ2IjoiMSJ9.XBINg-sjhfF_gUtnMiKGjhlE-f5AuPRamTr33nRxSXntyKfd63to9CLmG4oT0XzvefW7_-rkGLljT9zR0TVvUHDRI1-4-yyG7q4mVwGZw31y1pJfL7dMpDerC6cAtc1-Tt0l_KIMhDk0JYmctMnpaxnwA2a-b2-K0pUovI9IQGF8Xc_qM52rKNzfTDChAAKbdtlzSkJ86XNHIAPF3mfyPp7Vyvs8qTgms_41ZuKcpds.7c-3XjXXt43TL9RYoD3Cmr00XcqVVDjLWd9Lxeq53vg&dib_tag=se&keywords=esp+32&qid=1773984297&sr=8-4
 
+Arduino uno $32.09    https://store.arduino.cc/products/arduino-uno-rev3-smd
 
-Total $148.21
+Total $160.30
 I bought everything together exept for the esp32 so I got free shipping
