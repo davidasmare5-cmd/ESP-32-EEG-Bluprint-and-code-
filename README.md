@@ -1,5 +1,6 @@
 This is a EEG controlled arm that I made to help with disabled people use technology
 You put these EEG cups on your left and right side of your forehead and think really hard then the arm will move
+I used KiCad, Cura, arduino IDE, tinkercad and fusion 360 for this project
 
 
 5 Ad8326 $18.4 https://www.digikey.com/en/products/detail/analog-devices-inc/AD8236ARMZ-R7/2077117
