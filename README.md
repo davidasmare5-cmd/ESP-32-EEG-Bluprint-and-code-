@@ -32,6 +32,9 @@ Arduino uno $32.09    https://store.arduino.cc/products/arduino-uno-rev3-smd
 
 I already had thease for a while
 ![IMG_0316](https://github.com/user-attachments/assets/092ed61f-33a5-4573-82bf-8f7f50824eb3)
+![IMG_0319](https://github.com/user-attachments/assets/fa8e49dc-38f3-4b24-9864-e60413b4b225)
+![IMG_0318](https://github.com/user-attachments/assets/422d71ee-ce5a-4efe-8aa2-92c7467171a1)
+![IMG_0317](https://github.com/user-attachments/assets/d1e356ad-73a8-42d7-9ff1-f30ea507b487)
 
 Total $160.30
 I bought everything together exept for the esp32 so I got free shipping
