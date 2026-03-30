@@ -28,6 +28,8 @@ Esp 32 $25.00     https://www.amazon.com/ELEGOO-ESP-WROOM-32-Development-Bluetoo
 Arduino uno $32.09    https://store.arduino.cc/products/arduino-uno-rev3-smd
 
 4 Servo motor https://www.amazon.com/4-Pack-MG996R-Torque-Digital-Helicopter/dp/B07MFK266B/ref=sr_1_7?dib=eyJ2IjoiMSJ9._Ep80T0iqeNmZ5Aco2lsXwEDYnnmzE_zOiCDVGbo22tMVtltKr1LBlJEp2XT0oG6NLnchhdstLanCvB5d0Yvu_S1cuDnIQv4_JK-nPOUNPh1KzckyTg8rCq1GNiMYgyFbdEWqYuOCxsmZ7aKKQLbjgBW41yGNM813noW4bGFWT1T9hKYuKRDURmyrD065ZlGLugRtcqvn3q5UDrlkI7db1lC6_hWIxldngkpzJyJrrP1sE7_97snIpZG1rv8yxRm5HQnBcLw1bbZSMI1TGYIGdCdxSx57YFXMMiZHd5WyGI.vGF0Zk2a4o4iRuXZp07zO2-slzAwPW0qJdh7Xh_wsf4&dib_tag=se&keywords=mg996r%2Bservo&qid=1774898882&sr=8-7&th=1
+
+
 I already had thease for a while
 ![IMG_0316](https://github.com/user-attachments/assets/092ed61f-33a5-4573-82bf-8f7f50824eb3)
 
