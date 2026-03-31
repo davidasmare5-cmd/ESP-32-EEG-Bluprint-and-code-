@@ -10,3 +10,6 @@ I used KiCad, Cura, arduino IDE, tinkercad and fusion 360 for this project
 
 ![IMG_0317](https://github.com/user-attachments/assets/d1e356ad-73a8-42d7-9ff1-f30ea507b487)
 
+Videos For Project
+
+https://drive.google.com/file/d/1BlsI03C6V_ywxOm5Bb9XX4AMcBOnDZ4c/view?usp=sharing
