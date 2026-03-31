@@ -2,6 +2,13 @@ This is a EEG controlled arm that I made to help with disabled people use techno
 You put these EEG cups on your left and right side of your forehead and think really hard then the arm will move
 I used KiCad, Cura, arduino IDE, tinkercad and fusion 360 for this project
 
+<img width="438" height="369" alt="Screenshot 2026-03-31 164719" src="https://github.com/user-attachments/assets/d4c97195-3784-4d84-b886-ca14da1df54f" />
+
+<img width="495" height="422" alt="Screenshot 2026-03-31 164653" src="https://github.com/user-attachments/assets/bf491d68-9bbd-419e-b236-acc8eeb83cd3" />
+
+<img width="670" height="466" alt="Screenshot 2026-03-31 164639" src="https://github.com/user-attachments/assets/a3b5cec5-5f56-43fd-8e07-7c8bbf6aed2c" />
+
+
 ![IMG_0316](https://github.com/user-attachments/assets/092ed61f-33a5-4573-82bf-8f7f50824eb3)
 
 ![IMG_0319](https://github.com/user-attachments/assets/fa8e49dc-38f3-4b24-9864-e60413b4b225)
