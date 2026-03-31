@@ -1,0 +1,49 @@
+//AI HELPED me make the code I did most of the code it just helped me with corrections and that pretty much it
+#include <ESP32Servo.h>
+
+Servo servoOne, servoTwo, servoThree;
+const int EEG = 34;
+
+const int MIDPOINT = 2048;
+const int SENSITIVITY = 400;
+float filterWeight = 0.05;
+float smoothedValue = MIDPOINT;
+int currentAngle = 0;
+unsigned long lastMoveTime = 0;
+const int motorSpeed = 15;
+
+void setup() {
+  Serial.begin(115200);
+  ESP32PWM::allocateTimer(0);
+  servoOne.attach(18, 500, 2400);
+  servoTwo.attach(19, 500, 2400);
+  servoThree.attach(21, 500, 2400);
+}
+
+void loop() {
+  int rawValue = analogRead(EEG);
+  smoothedValue = (rawValue * filterWeight) + (smoothedValue * (1.0 - filterWeight));
+   int intensity = abs((int)smoothedValue - MIDPOINT);
+    int targetAngle = map(intensity, 0, SENSITIVITY, 0, 180);
+     targetAngle = constrain(targetAngle, 0, 180);
+
+  if (millis() - lastMoveTime > motorSpeed) {
+    if (currentAngle < targetAngle) {
+      currentAngle++;
+    } else if (currentAngle > targetAngle) {
+      currentAngle--;
+    }
+    
+    servoOne.write(currentAngle);
+    servoTwo.write(currentAngle);
+    servoThree.write(currentAngle);
+    lastMoveTime = millis();
+  }
+
+  Serial.print(rawValue);
+  Serial.print(",");
+  Serial.print(smoothedValue);
+  Serial.print(",");
+  Serial.println(targetAngle);
+  delay(5);
+}
